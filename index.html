@@ -5,12 +5,14 @@
     <title>Salmon Bellies</title>
     <link href="css/style.css" rel="stylesheet">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous"> -->
-    <!-- <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous"> -->
+    <link rel="preload" href="fonts/montserrat-v14-latin-ext-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v14-latin-ext-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v14-latin-ext-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v14-latin-ext-regular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <header class="header header--index">
-      <div class="header__wrapper">
+      <!-- <div class="header__wrapper"> -->
         <nav class="main-nav main-nav--opened">
           <select class="main-nav__lang-select" id="lang">
             <option class="main-nav__lang" value="/en/">English</option>
@@ -19,46 +21,52 @@
             <option class="main-nav__lang" value="/it/">Italiano</option>
             <option class="main-nav__lang" value="/nl/">Nederlandse</option>
           </select>
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Our products</a>
+              <a class="main-nav__link" href='#'>Our products</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Receipes</a>
+              <a class="main-nav__link" href='#'>Receipes</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Services</a>
+              <a class="main-nav__link" href='#'>Services</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">The promise</a>
+              <a class="main-nav__link" href='#'>The promise</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Origin</a>
+              <a class="main-nav__link" href='#'>Origin</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Markets</a>
+              <a class="main-nav__link" href='#'>Markets</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">CSR</a>
+              <a class="main-nav__link" href='#'>CSR</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Company</a>
+              <a class="main-nav__link" href='#'>Company</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <a class="header__logo logo">
-          <img class="logo__image" src="img/logo.svg" width="190" height="40" alt="Salmon Bellies logo">
-        </a>
-          <h1 class="logo__title">Salmon Bellies AS</h1>
-        <p class="logo__slogan">Trout is the new salmon</p>
+        <div class="header__logo logo">
+          <a class="logo__link" href="#">
+            <img class="logo__image" src="img/logo.svg" width="190" height="40" alt="Salmon Bellies logo">
+          </a>
+          <img class="logo__title" src="img/SalmonbelliesAS.svg" width="200" height="26" alt="Salmon Bellies logo">
+          <p class="logo__slogan">Trout is the new salmon</p>
+          </div>
         <p class="header__intro">Salmonbellies and Lyxfish commit to sell at NO higher prices then quoted from our partner Kalaneuvos</p>
-      </div>
+      <!-- </div> -->
     </header>
     <main class="main">
-      <div class="main__wrapper">
+      <h1 class="visually-hidden">Salmon Bellies AS</h1>
+      <!-- <div class="main__wrapper"> -->
         <section class="main__catalog catalog">
           <h2 class="main__title">Main fish products</h2>
           <p class="main__description">The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus</p>  
@@ -153,7 +161,7 @@
               </a>
               <p class="certificate__description">We are certified (ASC-C-01179). Look for the Aquq Green ASC Logo</p>
             </div>
-            <p class="quality__description">Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.</p>
+            <p class="main__description main__description--quality">Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.</p>
           </div>
         </section>
         <section class="main__location location">
@@ -181,7 +189,7 @@
             </li>
             <li class="location__item">
               <h4 class="location__title">Baltic herring</h4>
-              <p class="location__description">/* The Bothnian Sea and the Archipelago Sea */</p>
+              <p class="location__description">The Bothnian Sea and the Archipelago Sea</p>
             </li>
             <li class="location__item">
               <h4 class="location__title">Vendace</h4>
@@ -225,9 +233,9 @@
             </li>
           </ul>
         </section>
-      </div>
+      <!-- </div> -->
     </main>
-    <!-- <script src="js/script.min.js"></script>
-    <script src="js/picturefill.min.js"></script> -->
+    <script src="js/script.js"></script>
+    <!-- <script src="js/picturefill.min.js"></script> -->
   </body>
 </html>
