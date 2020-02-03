@@ -99,18 +99,100 @@ img {
 }
 
 .header__lang-select {
-  display: none;
   position: absolute;
-  top: 5px;
-  left: 10px;
+  top: -12px;
+  left: 15px;
+  display: flex;
+}
+
+.lang-select__menu {
+  display: block;
+}
+
+.lang-select__menu--closed {
+  display: none;
 }
 
 .lang-select__list {
   margin: 0;
   padding: 0;
-  width: 135px;
+  margin-top: 19px;
   list-style: none;
+  display: flex;
+}
+
+.lang-select__title,
+.lang-select__item {
+  display: block;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 10px;
+  background-image: url(../img/uk-flag.svg);
+}
+
+.lang-select__title--hidden {
   display: none;
+}
+
+.lang-select__item--en {
+  background-image: url(../img/uk-flag.svg);
+}
+
+.lang-select__item--de {
+  background-image: url(../img/germany-flag.svg);
+}
+
+.lang-select__item--by {
+  background-image: url(../img/belarus-flag.svg);
+}
+
+.lang-select__toggle {
+  position: absolute;
+  left: 35px;
+  top: 27px;
+  z-index: 2;
+  outline: 0;
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 6px;
+  height: 8px;
+  cursor: pointer;
+}
+
+.lang-select__toggle--open::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 6px;
+  height: 8px;
+  background-image: url("../img/arrow-right.svg");
+  background-size: 6px 8px;
+  background-position: center center;
+}
+
+.lang-select__toggle--close {
+  top: 27px;
+  left: 103px;
+}
+
+.lang-select__toggle--close::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+  width: 6px;
+  height: 8px;
+  background-image: url("../img/arrow-left.svg");
+  background-size: 6px 8px;
+  background-position: center center;
 }
 
 .main-nav {

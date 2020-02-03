@@ -14,11 +14,13 @@
     <header class="header header--index">
       <div class="header__lang-select lang-select">
         <h4 class="lang-select__title"><span class="visually-hidden">English</span></h4>
-        <ul class="lang-select__list" id="lang">
-          <li class="lang-select__item lang-select__item--en"><a href="#">English</a></li>
-          <li class="lang-select__item lang-select__item--de"><a href="#">Deutsch</a></li>
-          <li class="lang-select__item lang-select__item--by"><a href="#">Беларуская</a></li>
-        </ul>
+        <div class="lang-select__menu lang-select__menu--closed">
+          <ul class="lang-select__list" id="lang">
+            <li class="lang-select__item lang-select__item--en"><span class="visually-hidden">English</span></li>
+            <li class="lang-select__item lang-select__item--de"><span class="visually-hidden">Deutsch</span></li>
+            <li class="lang-select__item lang-select__item--by"><span class="visually-hidden">Беларуская</span></li>
+          </ul>
+        </div>
         <button class="lang-select__toggle lang-select__toggle--open" type="button">
           <span class="visually-hidden">Open language selection</span>
         </button>
