@@ -87,21 +87,6 @@ img {
   padding: 0;
 }
 
-@media (min-width: 1320px) {
-  .header,
-  .main {
-    width: 1320px;
-  }
-}
-
-
-@media (min-width: 1600px) {
-  .header,
-  .main {
-    width: 1600px;
-  }
-}
-
 .header {
   background: rgb(180, 220, 240);
   background-image: url('../img/norway.jpg');
@@ -112,7 +97,6 @@ img {
   text-align: center;
   margin-bottom: -18px;
 }
-
 
 .main-nav {
   position: relative;
@@ -129,18 +113,6 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 1320px) {
-  .main-nav__list {
-    padding: 0 200px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .main-nav__list {
-    padding: 0 365px;
-  }
 }
 
 .main-nav__item:first-child {
@@ -417,7 +389,7 @@ img {
   position: relative;
   text-align: left;
   padding: 0;
-  margin: 30px 0 50px;
+  margin: 40px 0 30px;
 }
 
 @media (max-width: 767px) {
@@ -425,7 +397,7 @@ img {
     content: "";
     position: absolute;
     left: 80px;
-    top: -23px;
+    top: -28px;
     z-index: 3;
     width: 120px;
     height: 7px;
@@ -438,7 +410,8 @@ img {
 .quality__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .certificate {
@@ -451,6 +424,9 @@ img {
   display: inline-block;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 500;
+  color: #00519C;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -559,7 +535,7 @@ img {
     width: 100%;
     font-size: 14px;
     line-height: 24px;
-    padding: 0 50px;
+    padding: 0 20px;
   }
 
   .main__title--promo::before,
@@ -597,11 +573,13 @@ img {
   }
 
   .quality__wrapper {
-    margin-top: 50px;
+    padding: 50px 50px 20px;
   }
 
   .certificate {
     width: 50%;
+    justify-content: flex-start;
+    padding: 0 20px;
   }
 
   .certificate__image--msc {
@@ -615,8 +593,7 @@ img {
   }
 
   .certificate__description {
-    padding-right: 50px;
-    padding-left: 50px;
+    text-align: left;
   }
 
   .main__location {
@@ -628,8 +605,68 @@ img {
     padding-left: 30px;
     padding-right: 30px;
   }
-
 }
 
+@media (min-width: 1320px) {
+  .header,
+  .main {
+    width: 1320px;
+  }
 
+  .header {
+    padding-top: 30px;
+    background-size: 100% 100%;
+  }
 
+  .main-nav__list {
+    padding: 0 300px;
+  }
+
+  .main-nav__lang-select {
+    top: 5px;
+    left: 1150px;
+  }
+
+  .logo__image {
+    width: 132px;
+    height: 77;
+  }
+
+  .main__description {
+    padding: 0 300px;
+  }
+
+  .main__title--promo::before {
+    left: 502px;
+  }
+  
+  .main__title--promo::after {
+    left: 770px;
+  }
+  
+  .promo__link {
+    width: 356px;
+  }
+
+  .quality__wrapper {
+    padding: 40px 90px;
+    flex-wrap: nowrap;
+  }
+
+  .main__description--quality {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header,
+  .main {
+    width: 1600px;
+  }
+
+  .main-nav__list {
+    padding: 0 365px;
+  }
+}

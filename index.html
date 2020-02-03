@@ -14,13 +14,14 @@
     <header class="header header--index">
       <!-- <div class="header__wrapper"> -->
         <nav class="main-nav main-nav--opened">
-          <select class="main-nav__lang-select" id="lang">
-            <option class="main-nav__lang" value="/en/">English</option>
-            <option class="main-nav__lang" value="/es/">Español</option>
-            <option class="main-nav__lang" value="/de/">Deutsch</option>
-            <option class="main-nav__lang" value="/it/">Italiano</option>
-            <option class="main-nav__lang" value="/nl/">Nederlandse</option>
-          </select>
+          <div class="main-nav__lang-select lang-select">
+            <span class="lang-select__title"></span>>
+            <ul class="lang-select__list" id="lang">
+              <li class="lang-select__item"><a href="#">English</a></li>
+              <li class="lang-select__item"><a href="#">Deutsch</a></li>
+              <li class="lang-select__item"><a href="#">Italiano</a></li>
+            </ul>
+            </div>
           <button class="main-nav__toggle main-nav__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
