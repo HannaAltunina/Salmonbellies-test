@@ -3,16 +3,20 @@ var navToggle = document.querySelector('.header__toggle');
 var langSelectMenu = document.querySelector('.lang-select__menu');
 var langSelectToggle = document.querySelector('.lang-select__toggle');
 var langSelectTitle = document.querySelector('.lang-select__title');
-var langSelectItems = document.querySelectorAll('.lang-select__item');
+var langSelectItems = document.querySelector('.lang-select__item');
 
 function changeLanguage(item) {
-  langSelectTitle.style.backgroundImage = item.style.backgroundImage;
+  langSelectTitle.innerHTML = '';
+  var backgroundContent = item.querySelector('.lang-select__link');
+  langSelectTitle.appendChild(backgroundContent);
 }
 
-function onLanguageItemClick() {
-  changeLanguage(item);
-}
-
+  // langSelectItems.forEach(function (it) {
+  //   it.addEventListener('click', function () {
+  //     console.log('hi!')
+  //   });
+  //   return it;
+  // });
 
 navToggle.addEventListener('click', function() {
   if (navToggle.classList.contains('header__toggle--open')) {
@@ -34,9 +38,6 @@ langSelectToggle.addEventListener('click', function() {
     langSelectToggle.classList.remove('lang-select__toggle--open');
     langSelectToggle.classList.add('lang-select__toggle--close');
     langSelectTitle.classList.add('lang-select__title--hidden');
-    langSelectItems.forEach(function (item) {
-      item.addEventListener('click', onLanguageItemClick);
-    });
   } else {
     langSelectMenu.classList.add('lang-select__menu--closed');
     langSelectToggle.classList.remove('lang-select__toggle--close');
@@ -44,5 +45,3 @@ langSelectToggle.addEventListener('click', function() {
     langSelectTitle.classList.remove('lang-select__title--hidden');
   }
 });
-
-

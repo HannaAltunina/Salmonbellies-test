@@ -127,26 +127,32 @@ img {
   background: transparent;
   width: 25px;
   height: 25px;
+  margin-right: 10px;
+}
+
+.lang-select__link {
+  display: block;
+  background: transparent;
+  width: 25px;
+  height: 25px;
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-right: 10px;
-  background-image: url(../img/uk-flag.svg);
 }
 
 .lang-select__title--hidden {
   display: none;
 }
 
-.lang-select__item--en {
+.lang-select__link--en {
   background-image: url(../img/uk-flag.svg);
 }
 
-.lang-select__item--de {
+.lang-select__link--de {
   background-image: url(../img/germany-flag.svg);
 }
 
-.lang-select__item--by {
+.lang-select__link--by {
   background-image: url(../img/belarus-flag.svg);
 }
 
@@ -584,10 +590,44 @@ img {
     display: none;
   }
 
+  .lang-select__list {
+    flex-direction: column;
+  }
+
+  .lang-select__item {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .lang-select__toggle {
+    padding: 0;
+    width: 8px;
+    height: 6px;
+  }
+
+  .lang-select__toggle--open::before {
+    width: 8px;
+    height: 6px;
+    background-image: url("../img/arrow-down.svg");
+    background-size: 8px 6px;
+  }
+
+  .lang-select__toggle--close {
+    left: 35px;
+    top: 27px;
+  }
+  
+  .lang-select__toggle--close::before {
+    width: 8px;
+    height: 6px;
+    background-image: url("../img/arrow-up.svg");
+    background-size: 8px 6px;
+  }
+
   .main-nav__list {
     flex-direction: row;
     margin: 0 auto;
-    padding: 15px 120px 0 30px;
+    padding: 15px 90px 0 50px;
     justify-content: space-between;
   }
 
@@ -606,8 +646,8 @@ img {
   }
 
   .header__lang-select {
-    top: 5px;
-    left: 680px;
+    top: -3px;
+    left: 700px;
   }
 
   .logo__image {

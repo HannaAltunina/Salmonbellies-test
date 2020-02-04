@@ -13,19 +13,19 @@
   <body>
     <header class="header header--index">
       <div class="header__lang-select lang-select">
-        <h4 class="lang-select__title"><span class="visually-hidden">English</span></h4>
-        <div class="lang-select__menu lang-select__menu--closed">
-          <ul class="lang-select__list" id="lang">
-            <li class="lang-select__item lang-select__item--en"><span class="visually-hidden">English</span></li>
-            <li class="lang-select__item lang-select__item--de"><span class="visually-hidden">Deutsch</span></li>
-            <li class="lang-select__item lang-select__item--by"><span class="visually-hidden">Беларуская</span></li>
+        <h4 class="lang-select__title"><a href="#" class="lang-select__link lang-select__link--en"></a><span class="visually-hidden">English</span></h4>
+        <div class="lang-select__menu lang-select__menu--closed" tabindex="1000">
+          <ul class="lang-select__list" tabindex="1000">
+            <li class="lang-select__item" tabindex="1000"><a href="#" class="lang-select__link lang-select__link--en" tabindex="1000"></a><span class="visually-hidden">English</span></li>
+            <li class="lang-select__item" tabindex="1000"><a href="#" class="lang-select__link lang-select__link--de" tabindex="1000"></a><span class="visually-hidden">Deutsch</span></a>
+            <li class="lang-select__item" tabindex="1000"><a href="#" class="lang-select__link lang-select__link--by" tabindex="1000"></a><span class="visually-hidden">Беларуская</span></a>
           </ul>
         </div>
         <button class="lang-select__toggle lang-select__toggle--open" type="button">
           <span class="visually-hidden">Open language selection</span>
         </button>
       </div>
-      <button class="header__toggle header__toggle--open" type="button">
+      <button class="header__toggle header__toggle--open" type="button" tabindex="1002">
         <span class="visually-hidden">Open menu</span>
       </button>
         <nav class="main-nav main-nav--opened">
