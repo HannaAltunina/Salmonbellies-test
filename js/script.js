@@ -16,6 +16,10 @@ function changeLanguage() {
   var langSelectItems = document.querySelectorAll('.lang-select__item');
   langSelectItems.forEach(function (it) {
     it.addEventListener('click', function () {
+      var titleClasses = langSelectTitle.querySelector('.lang-select__link').classList;
+      titleClasses.forEach(function (it) {
+        langSelectTitle.querySelector('.lang-select__link').classList.remove(it);
+      });
       var linkClasses = it.querySelector('.lang-select__link').classList;
       linkClasses.forEach(function (it) {
         langTitleLink.classList.add(it);

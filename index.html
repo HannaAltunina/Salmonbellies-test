@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <title>Salmon Bellies</title>
     <link href="css/style.css" rel="stylesheet">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-300.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-500.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-600.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-regular.woff2" as="font" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap&subset=latin-ext" rel="stylesheet"> -->
   </head>
   <body>
     <header class="header header--index">
       <div class="header__lang-select lang-select">
-        <h4 class="lang-select__title"><a href="#" class="lang-select__link lang-select__link--en"></a><span class="visually-hidden">English</span></h4>
+        <h4 class="lang-select__title"><a href="#" class="lang-select__link"></a><span class="visually-hidden">English</span></h4>
         <div class="lang-select__menu lang-select__menu--closed">
           <ul class="lang-select__list">
             <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--en"></a><span class="visually-hidden">English</span></li>
-            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--de"></a><span class="visually-hidden">Deutsch</span></li>
-            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--by"></a><span class="visually-hidden">Беларуская</span></li>
+            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--de"></a><span class="visually-hidden">Deutsch</span></a>
+            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--by"></a><span class="visually-hidden">Беларуская</span></a>
           </ul>
         </div>
         <button class="lang-select__toggle lang-select__toggle--open" type="button">
@@ -67,11 +67,9 @@
           <p class="logo__slogan">Trout is the new salmon</p>
           </div>
         <p class="header__intro">Salmonbellies and Lyxfish commit to sell at NO higher prices then quoted from our partner Kalaneuvos</p>
-      <!-- </div> -->
     </header>
     <main class="main">
       <h1 class="visually-hidden">Salmon Bellies AS</h1>
-      <!-- <div class="main__wrapper"> -->
         <section class="main__catalog catalog">
           <h2 class="main__title">Main fish products</h2>
           <p class="main__description">The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus</p>  
@@ -97,7 +95,7 @@
                 <img class="product__photo" src="img/lohi-kokonainen.png" width="248" height="155" alt="Salmon whole salmo salar">
               </a>
               <a class="product__title-link" href="#">
-                <h3 class="product__title">Salmon whole salmo salar</h3>
+                <h3 class="product__title">Salmon whole salmo&nbsp;salar</h3>
               </a>
             </li>
             <li class="catalog__item product">
@@ -105,7 +103,7 @@
                 <img class="product__photo" src="img/norjalainen-lohifilee.png" width="243" height="151" alt="Salmon c-cut fillet salmo salar">
               </a>
               <a class="product__title-link" href="#">
-                <h3 class="product__title">Salmon c-cut fillet salmo salar</h3>
+                <h3 class="product__title">Salmon c-cut fillet salmo&nbsp;salar</h3>
               </a>
             </li>
             <li class="catalog__item product">
@@ -113,7 +111,7 @@
                 <img class="product__photo" src="img/siika-kasvatettu-villi.png" width="248" height="155" alt="Whitefish coregonus lavaretus">
               </a>
               <a class="product__title-link" href="#">
-                <h3 class="product__title">Whitefish coregonus lavaretus</h3>
+                <h3 class="product__title">Whitefish coregonus&nbsp;lavaretus</h3>
               </a>
             </li>
             <li class="catalog__item product">
@@ -151,26 +149,26 @@
           </div>
         </section>
         <section class="main__quality quality">
-          <h2 class="main__title">Salmofan and quality</h2>
+          <h2 class="main__title main__title--quality">Salmofan and quality</h2>
           <p class="main__description">Color test, salmonbellies ensures clients demand are met and that producer delivers accordingly.</p>
           <div class="quality__wrapper">
             <div class="certificate">
               <a class="certificate__image-link" href="#">
                 <img class="certificate__image certificate__image--msc" src="img/msc.png" width="235" height="84" alt="Certificate MSC">
               </a>
-              <p class="certificate__description">We are certified (MSC-C-55443). Look for the Blue MSC Label </p>
+              <p class="certificate__description">We are MSC certified (MSC-C-55443). Look for the Blue MSC Label </p>
             </div>
             <div class="certificate">
               <a class="certificate__image-link" href="#">
                 <img class="certificate__image certificate__image--asc" src="img/asc.png" width="181" height="83" alt="Certificate ASC">
               </a>
-              <p class="certificate__description">We are certified (ASC-C-01179). Look for the Aquq Green ASC Logo</p>
+              <p class="certificate__description">We are ASC certified (ASC-C-01179). Look for the Aquq Green ASC Logo</p>
             </div>
             <p class="main__description main__description--quality">Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.</p>
           </div>
         </section>
         <section class="main__location location">
-          <h2 class="main__title">Fish by Kalaneuvos are caught or farmed primarily in the following locations</h2>
+          <h2 class="main__title main__title--location">Fish by Kalaneuvos are caught or farmed primarily in the following locations</h2>
           <ul class="location__list">
             <li class="location__item">
               <h4 class="location__title">Trout</h4>
@@ -186,7 +184,7 @@
             </li>
             <li class="location__item">
               <h4 class="location__title">Whitefish (wild)</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi, Lake Kyrösjärvi, the Archipelago Sea, Åland</p>
+              <p class="location__description" lang="fi">Lake Lappajärvi, Lake Kyrösjärvi, the&nbsp;Archipelago Sea, Åland</p>
             </li>
             <li class="location__item">
               <h4 class="location__title">Whitefish (Canada)</h4>
@@ -202,11 +200,11 @@
             </li>
             <li class="location__item">
               <h4 class="location__title">Northern pike</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi Lake Kyrösjärvi Lake Pyhäjärvi in Säkylä</p>
+              <p class="location__description" lang="fi">Lake Lappajärvi Lake Kyrösjärvi Lake&nbsp;Pyhäjärvi in Säkylä</p>
             </li>
             <li class="location__item">
               <h4 class="location__title">Pike perch (freshwater)</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi Lake Vesijärvi in Lahti</p>
+              <p class="location__description" lang="fi">Lake Lappajärvi Lake Pyhäjärvi in&nbsp;Pirkanmaa Lake Kyrösjärvi Lake&nbsp;Vesijärvi in Lahti</p>
             </li>
             <li class="location__item">
               <h4 class="location__title">Pike perch (sea)</h4>
@@ -238,9 +236,7 @@
             </li>
           </ul>
         </section>
-      <!-- </div> -->
     </main>
     <script src="js/script.js"></script>
-    <!-- <script src="js/picturefill.min.js"></script> -->
   </body>
 </html>
