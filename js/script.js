@@ -3,20 +3,37 @@ var navToggle = document.querySelector('.header__toggle');
 var langSelectMenu = document.querySelector('.lang-select__menu');
 var langSelectToggle = document.querySelector('.lang-select__toggle');
 var langSelectTitle = document.querySelector('.lang-select__title');
-var langSelectItems = document.querySelector('.lang-select__item');
+var langTitleLink = langSelectTitle.querySelector('.lang-select__link');
 
-function changeLanguage(item) {
-  langSelectTitle.innerHTML = '';
-  var backgroundContent = item.querySelector('.lang-select__link');
-  langSelectTitle.appendChild(backgroundContent);
+function closeLanguageMenu() {
+  langSelectMenu.classList.add('lang-select__menu--closed');
+  langSelectToggle.classList.remove('lang-select__toggle--close');
+  langSelectToggle.classList.add('lang-select__toggle--open');
+  langSelectTitle.classList.remove('lang-select__title--hidden');
 }
 
-  // langSelectItems.forEach(function (it) {
-  //   it.addEventListener('click', function () {
-  //     console.log('hi!')
-  //   });
-  //   return it;
-  // });
+function changeLanguage() {
+  var langSelectItems = document.querySelectorAll('.lang-select__item');
+  langSelectItems.forEach(function (it) {
+    it.addEventListener('click', function () {
+      var linkClasses = it.querySelector('.lang-select__link').classList;
+      linkClasses.forEach(function (it) {
+        langTitleLink.classList.add(it);
+      });
+      closeLanguageMenu();
+      return langTitleLink;
+    });
+    return it;
+  });
+}
+
+function openLanguageMenu() {
+  langSelectMenu.classList.remove('lang-select__menu--closed');
+  langSelectToggle.classList.remove('lang-select__toggle--open');
+  langSelectToggle.classList.add('lang-select__toggle--close');
+  langSelectTitle.classList.add('lang-select__title--hidden');
+  changeLanguage();
+}
 
 navToggle.addEventListener('click', function() {
   if (navToggle.classList.contains('header__toggle--open')) {
@@ -34,14 +51,8 @@ navToggle.addEventListener('click', function() {
 
 langSelectToggle.addEventListener('click', function() {
   if (langSelectToggle.classList.contains('lang-select__toggle--open')) {
-    langSelectMenu.classList.remove('lang-select__menu--closed');
-    langSelectToggle.classList.remove('lang-select__toggle--open');
-    langSelectToggle.classList.add('lang-select__toggle--close');
-    langSelectTitle.classList.add('lang-select__title--hidden');
+    openLanguageMenu()
   } else {
-    langSelectMenu.classList.add('lang-select__menu--closed');
-    langSelectToggle.classList.remove('lang-select__toggle--close');
-    langSelectToggle.classList.add('lang-select__toggle--open');
-    langSelectTitle.classList.remove('lang-select__title--hidden');
+    closeLanguageMenu();
   }
 });

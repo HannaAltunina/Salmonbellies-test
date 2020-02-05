@@ -100,6 +100,7 @@ img {
 
 .header__lang-select {
   position: absolute;
+  z-index: 3;
   top: -12px;
   left: 15px;
   display: flex;
@@ -760,7 +761,7 @@ img {
 
   .logo__image {
     width: 132px;
-    height: 77;
+    height: 77px;
   }
 
   .main__description {
