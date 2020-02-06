@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Salmon Bellies</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-300.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-500.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-600.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-v14-latin-ext-regular.woff2" as="font" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap&subset=latin-ext" rel="stylesheet"> -->
   </head>
   <body>
     <header class="header header--index">
       <div class="header__lang-select lang-select">
-        <h4 class="lang-select__title"><a href="#" class="lang-select__link"></a><span class="visually-hidden">English</span></h4>
+        <h4 class="lang-select__title" tabindex="1"><a href="#" class="lang-select__link"></a><span class="visually-hidden">English</span></h4>
         <div class="lang-select__menu lang-select__menu--closed">
-          <ul class="lang-select__list">
-            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--en"></a><span class="visually-hidden">English</span></li>
-            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--de"></a><span class="visually-hidden">Deutsch</span></a>
-            <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--by"></a><span class="visually-hidden">Беларуская</span></a>
-          </ul>
+        <ul class="lang-select__list">
+          <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--en"></a><span class="visually-hidden">English</span></li>
+          <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--de"></a><span class="visually-hidden">Deutsch</span></li>
+          <li class="lang-select__item"><a href="#" class="lang-select__link lang-select__link--by"></a><span class="visually-hidden">Беларуская</span></li>
+        </ul>
         </div>
         <button class="lang-select__toggle lang-select__toggle--open" type="button">
           <span class="visually-hidden">Open language selection</span>
@@ -28,214 +28,214 @@
       <button class="header__toggle header__toggle--open" type="button">
         <span class="visually-hidden">Open menu</span>
       </button>
-        <nav class="main-nav main-nav--opened">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>Our products</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>Receipes</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>Services</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>The promise</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>Origin</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>Markets</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>CSR</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href='#'>Company</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__logo logo">
-          <a class="logo__link" href="#">
-            <img class="logo__image" src="img/logo.svg" width="190" height="40" alt="Salmon Bellies logo">
-          </a>
-          <img class="logo__title" src="img/SalmonbelliesAS.svg" width="200" height="26" alt="Salmon Bellies logo">
-          <p class="logo__slogan">Trout is the new salmon</p>
-          </div>
-        <p class="header__intro">Salmonbellies and Lyxfish commit to sell at NO higher prices then quoted from our partner Kalaneuvos</p>
+      <nav class="main-nav main-nav--opened">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Our products</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Receipes</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Services</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>The promise</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Origin</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Markets</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>CSR</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Company</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href='#'>Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="img/logo.svg" width="190" height="40" alt="Salmon Bellies logo">
+        </a>
+        <img class="logo__title" src="img/SalmonbelliesAS.svg" width="200" height="26" alt="Salmon Bellies logo">
+        <p class="logo__slogan">Trout is the new salmon</p>
+      </div>
+      <p class="header__intro">Salmonbellies and Lyxfish commit to sell at NO higher prices then quoted from our partner Kalaneuvos</p>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Salmon Bellies AS</h1>
-        <section class="main__catalog catalog">
-          <h2 class="main__title">Main fish products</h2>
-          <p class="main__description">The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus</p>  
-          <ul class="catalog__list">
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/kirjolohi-kokonainen.png" width="246" height="154" alt="Trout whole oncorhynchus mykiss">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Trout whole oncorhynchus mykiss</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/kirjolohifilee.png" width="241" height="151" alt="Trout fillet oncorhynchus mykiss">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Trout fillet oncorhynchus mykiss</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/lohi-kokonainen.png" width="248" height="155" alt="Salmon whole salmo salar">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Salmon whole salmo&nbsp;salar</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/norjalainen-lohifilee.png" width="243" height="151" alt="Salmon c-cut fillet salmo salar">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Salmon c-cut fillet salmo&nbsp;salar</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/siika-kasvatettu-villi.png" width="248" height="155" alt="Whitefish coregonus lavaretus">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Whitefish coregonus&nbsp;lavaretus</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/siikafilee-suomulla-suomustettu-ruodoton.png" width="239" height="150" alt="Whitefish fillet without skin and scaled">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Whitefish fillet without skin and scaled</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/taimen.png" width="234" height="146" alt="Farmed brown trout salmo trutta">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Farmed brown trout salmo trutta</h3>
-              </a>
-            </li>
-            <li class="catalog__item product">
-              <a class="product__photo-link" href="#">
-                <img class="product__photo" src="img/kalaneuvos-tuore-taimenfilee-syvatty-web.png" width="246" height="153" alt="Farmed brown trout fillet salmo trutta">
-              </a>
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Farmed brown trout fillet salmo trutta</h3>
-              </a>
-            </li>
-          </ul>
-          <a class="site-button" href="#">View all products</a>
-        </section>
-        <section class="main__promo promo">
-          <h2 class="main__title main__title--promo">Our brochures</h2>
-          <div class="promo__wrapper">
-            <a class="promo__link" href="#" download="Chinese-brochure.pdf">Chinese version download</a>
-            <a class="promo__link" href="#" download="English-brochure.pdf">English version download</a>
+      <section class="main__catalog catalog">
+        <h2 class="main__title">Main fish products</h2>
+        <p class="main__description">The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus</p>  
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/kirjolohi-kokonainen.png" width="246" height="154" alt="Trout whole oncorhynchus mykiss">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Trout whole oncorhynchus mykiss</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/kirjolohifilee.png" width="241" height="151" alt="Trout fillet oncorhynchus mykiss">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Trout fillet oncorhynchus mykiss</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/lohi-kokonainen.png" width="248" height="155" alt="Salmon whole salmo salar">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Salmon whole salmo&nbsp;salar</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/norjalainen-lohifilee.png" width="243" height="151" alt="Salmon c-cut fillet salmo salar">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Salmon c-cut fillet salmo&nbsp;salar</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/siika-kasvatettu-villi.png" width="248" height="155" alt="Whitefish coregonus lavaretus">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Whitefish coregonus&nbsp;lavaretus</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/siikafilee-suomulla-suomustettu-ruodoton.png" width="239" height="150" alt="Whitefish fillet without skin and scaled">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Whitefish fillet without skin and scaled</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/taimen.png" width="234" height="146" alt="Farmed brown trout salmo trutta">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Farmed brown trout salmo trutta</h3>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__photo-link" href="#">
+              <img class="product__photo" src="img/kalaneuvos-tuore-taimenfilee-syvatty-web.png" width="246" height="153" alt="Farmed brown trout fillet salmo trutta">
+            </a>
+            <a class="product__title-link" href="#">
+              <h3 class="product__title">Farmed brown trout fillet salmo trutta</h3>
+            </a>
+          </li>
+        </ul>
+        <a class="site-button" href="#">View all products</a>
+      </section>
+      <section class="main__promo promo">
+        <h2 class="main__title main__title--promo">Our brochures</h2>
+        <div class="promo__wrapper">
+          <a class="promo__link" href="#" download="Chinese-brochure.pdf">Chinese version download</a>
+          <a class="promo__link" href="#" download="English-brochure.pdf">English version download</a>
+        </div>
+      </section>
+      <section class="main__quality quality">
+        <h2 class="main__title main__title--quality">Salmofan and quality</h2>
+        <p class="main__description">Color test, salmonbellies ensures clients demand are met and that producer delivers accordingly.</p>
+        <div class="quality__wrapper">
+          <div class="certificate">
+            <a class="certificate__image-link" href="#">
+              <img class="certificate__image certificate__image--msc" src="img/msc.png" width="235" height="84" alt="Certificate MSC">
+            </a>
+            <p class="certificate__description">We are MSC certified (MSC-C-55443). Look for the Blue MSC Label </p>
           </div>
-        </section>
-        <section class="main__quality quality">
-          <h2 class="main__title main__title--quality">Salmofan and quality</h2>
-          <p class="main__description">Color test, salmonbellies ensures clients demand are met and that producer delivers accordingly.</p>
-          <div class="quality__wrapper">
-            <div class="certificate">
-              <a class="certificate__image-link" href="#">
-                <img class="certificate__image certificate__image--msc" src="img/msc.png" width="235" height="84" alt="Certificate MSC">
-              </a>
-              <p class="certificate__description">We are MSC certified (MSC-C-55443). Look for the Blue MSC Label </p>
-            </div>
-            <div class="certificate">
-              <a class="certificate__image-link" href="#">
-                <img class="certificate__image certificate__image--asc" src="img/asc.png" width="181" height="83" alt="Certificate ASC">
-              </a>
-              <p class="certificate__description">We are ASC certified (ASC-C-01179). Look for the Aquq Green ASC Logo</p>
-            </div>
-            <p class="main__description main__description--quality">Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.</p>
+          <div class="certificate">
+            <a class="certificate__image-link" href="#">
+              <img class="certificate__image certificate__image--asc" src="img/asc.png" width="181" height="83" alt="Certificate ASC">
+            </a>
+            <p class="certificate__description">We are ASC certified (ASC-C-01179). Look for the Aquq Green ASC Logo</p>
           </div>
-        </section>
-        <section class="main__location location">
-          <h2 class="main__title main__title--location">Fish by Kalaneuvos are caught or farmed primarily in the following locations</h2>
-          <ul class="location__list">
-            <li class="location__item">
-              <h4 class="location__title">Trout</h4>
-              <p class="location__description">Farmed on the Finnish coast, in Åland and in Sweden</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Salmon</h4>
-              <p class="location__description">Farmed on the Lofoten Islands region of Northern Norway and on the north side of the Lofoten Islands</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Whitefish (farmed)</h4>
-              <p class="location__description">The Archipelago Sea</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Whitefish (wild)</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi, Lake Kyrösjärvi, the&nbsp;Archipelago Sea, Åland</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Whitefish (Canada)</h4>
-              <p class="location__description">The Canadian Great Lakes</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Baltic herring</h4>
-              <p class="location__description">The Bothnian Sea and the Archipelago Sea</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Vendace</h4>
-              <p class="location__description" lang="fi">Lake Puruvesi Lake Saimaa Lake Pyhäjärvi in Säkylä</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Northern pike</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi Lake Kyrösjärvi Lake&nbsp;Pyhäjärvi in Säkylä</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Pike perch (freshwater)</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi Lake Pyhäjärvi in&nbsp;Pirkanmaa Lake Kyrösjärvi Lake&nbsp;Vesijärvi in Lahti</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Pike perch (sea)</h4>
-              <p class="location__description">The Vaasa sea area, the Turku Archipelago</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Perch (freshwater)</h4>
-              <p class="location__description" lang="fi">Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Perch (sea)</h4>
-              <p class="location__description" lang="fi">Kvarken</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Brown trout (farmed)</h4>
-              <p class="location__description" lang="fi">Åland</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Arctic char (farmed)</h4>
-              <p class="location__description">Sweden</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Mackerel</h4>
-              <p class="location__description">Ireland and Scotland, grown in the north-east Atlantic</p>
-            </li>
-            <li class="location__item">
-              <h4 class="location__title">Cod</h4>
-              <p class="location__description">Sweden and Denmark area, the North-East Atlantic</p>
-            </li>
-          </ul>
-        </section>
+          <p class="main__description main__description--quality">Kalaneuvos Oy’s product selection includes fresh, smoked, cold smoked, frozen, slightly salted and marinated products. We provide fish products in several variants – caviar, whole fish, fillets, slices, portions, cubes, boneless and skinless fish. We have the ISO 9001 Quality Management System and the FSSC 22000 Food Safety System Certification, which provide a framework for effectively managing our organisation’s quality and food safety responsibilities. We also have the ISO 14001 Environmental Management System.</p>
+        </div>
+      </section>
+      <section class="main__location location">
+        <h2 class="main__title main__title--location">Fish by Kalaneuvos are caught or farmed primarily in the following locations</h2>
+        <ul class="location__list">
+          <li class="location__item">
+            <h4 class="location__title">Trout</h4>
+            <p class="location__description">Farmed on the Finnish coast, in Åland and in Sweden</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Salmon</h4>
+            <p class="location__description">Farmed on the Lofoten Islands region of Northern Norway and on the north side of the Lofoten Islands</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Whitefish (farmed)</h4>
+            <p class="location__description">The Archipelago Sea</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Whitefish (wild)</h4>
+            <p class="location__description" lang="fi">Lake Lappajärvi, Lake Kyrösjärvi, the&nbsp;Archipelago Sea, Åland</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Whitefish (Canada)</h4>
+            <p class="location__description">The Canadian Great Lakes</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Baltic herring</h4>
+            <p class="location__description">The Bothnian Sea and the Archipelago Sea</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Vendace</h4>
+            <p class="location__description" lang="fi">Lake Puruvesi Lake Saimaa Lake Pyhäjärvi in Säkylä</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Northern pike</h4>
+            <p class="location__description" lang="fi">Lake Lappajärvi Lake Kyrösjärvi Lake&nbsp;Pyhäjärvi in Säkylä</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Pike perch (freshwater)</h4>
+            <p class="location__description" lang="fi">Lake Lappajärvi Lake Pyhäjärvi in&nbsp;Pirkanmaa Lake Kyrösjärvi Lake&nbsp;Vesijärvi in Lahti</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Pike perch (sea)</h4>
+            <p class="location__description">The Vaasa sea area, the Turku Archipelago</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Perch (freshwater)</h4>
+            <p class="location__description" lang="fi">Lake Lappajärvi Lake Pyhäjärvi in Pirkanmaa Lake Kyrösjärvi</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Perch (sea)</h4>
+            <p class="location__description" lang="fi">Kvarken</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Brown trout (farmed)</h4>
+            <p class="location__description" lang="fi">Åland</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Arctic char (farmed)</h4>
+            <p class="location__description">Sweden</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Mackerel</h4>
+            <p class="location__description">Ireland and Scotland, grown in the north-east Atlantic</p>
+          </li>
+          <li class="location__item">
+            <h4 class="location__title">Cod</h4>
+            <p class="location__description">Sweden and Denmark area, the North-East Atlantic</p>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="js/script.js"></script>
   </body>
